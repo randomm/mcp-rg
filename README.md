@@ -25,7 +25,7 @@ The Ripgrep MCP server provides AI models with a powerful tool to search through
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/mcp-rg.git
+git clone https://github.com/randomm/mcp-rg.git
 cd mcp-rg
 
 # Build for release
@@ -38,7 +38,7 @@ cargo build --release
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/mcp-rg.git
+git clone https://github.com/randomm/mcp-rg.git
 cd mcp-rg
 
 # Build Docker image
