@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  ripgrep-mcp:
+    build: .
+    # The stdin_open: true is equivalent to the -i flag in docker run
+    stdin_open: true
+    volumes:
+      - ./:/app/files
+    environment:
+      - FILES_ROOT=/app/files
+      - LOG_LEVEL=debug

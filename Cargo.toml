@@ -1,0 +1,35 @@
+[package]
+name = "mcp-rg"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+# MCP implementation
+rust-mcp-sdk = "0.2.4"          # Minimalist MCP implementation
+rust-mcp-schema = "0.4.0"       # Type-safe MCP schema
+rust-mcp-transport = "0.2.1"    # MCP transport layer
+async-trait = "0.1.88"          # Trait for async functions in traits
+
+# Core functionality
+tokio = { version = "1.33.0", features = ["full"] }
+axum = "0.7.2"                  # Lightweight HTTP framework
+serde = { version = "1.0.189", features = ["derive"] }
+serde_json = "1.0.107"
+thiserror = "1.0.49"            # Error handling
+anyhow = "1.0.75"
+
+# Configuration
+dotenvy = "0.15.7"              # Environment variable handling
+config = "0.13.3"
+
+# Logging & metrics
+tracing = "0.1.37"
+tracing-subscriber = { version = "0.3.17", features = ["env-filter"] }
+
+# Additional dependencies
+which = "4.4.0"                 # Command-line utility detection
+
+[dev-dependencies]
+tempfile = "3.8.0"              # For testing
+mockall = "0.11.4"              # For mocking in tests
+proptest = "1.2.0"              # Property-based testing
